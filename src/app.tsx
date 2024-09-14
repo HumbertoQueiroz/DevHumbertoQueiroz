@@ -22,10 +22,30 @@ export function App() {
   day: 'numeric'
   });
 
+  //Boas vindas ao dev que veio inspecionar a página
+  console.clear
+  console.log("Muito obrigado por vir até aqui! Fique a vontade e explore o código desta página, desenvolvida em React.js")
+
   return (
-    <div className="w-full flex-col justify-center">
-      <div className="m-2">{`Bem-vindo, hoje é ${dateToday}.`}</div>
-        <div className="flex justify-center m-4">
+    <div className="w-full flex justify-center">
+      <div className="w-[1044px] flex flex-col">
+        <div className="flex justify-between my-4 ">
+          <p title="Manipulação de datas com Javascript">
+            {`Bem-vindo ao meu currículo, hoje é ${dateToday}.`}
+          </p>
+          <div className="flex gap-4 items-start">
+            <a 
+              title="Link para página do portifólio do Desenvolvedor Humberto Queiroz" 
+              rel="author" 
+              href="https://humbertoqueiroz.github.io/"
+              className="text-sm font-bold text-cyan-500 hover:bg-cyan-500 hover:text-white border-2 p-1 rounded border-cyan-500 "
+            >
+              Portifólio <span className="animate-pulse">&#128640;</span>
+            </a>
+            <img src="/qrcode_portifolio.png" alt="QR Code para portifólio" title="QR Code para portifólio"  className="rounded-lg w-32"/>
+          </div>
+        </div>
+        <div className="flex justify-center mb-4">
           <div className="w-[1044px]  border flex justify-between">
             <div className="w-1/4 bg-[#0f4571] text-slate-100">
               <Avatar  urlImg='fotoDevHumbertoQueiroz.JPG' alt="Foto do desenvolvedor Humberto Queiroz" />
@@ -33,10 +53,7 @@ export function App() {
                 <h2 className="mb-4 text-[#05d3f8]">
                   {age} anos, solteiro, Campo Verde-MT.
                 </h2>
-                
               </div>
-
-
             </div>
             <div className="w-3/4 bg-white">
               <header className="flex flex-col items-center">
@@ -45,28 +62,12 @@ export function App() {
                 </h1>
                 <div className="flex my-4" >
                     <div className="flex-col">
-                      <h2 className="text-4xl mt-10 translate-x-16 pl-14 pt-2 ">Desenvolvedor Web</h2>
-                      <p className="text-2xl translate-y-2 translate-x-16">Transformo café em código desde 2022</p>
-                    </div>
-                    <div className="w-32 translate-x-28 ">
-                      <img src="/qrcode_portifolio.png" alt="QR Code para portifólio" title="QR Code para portifólio"  className="rounded-lg w-32 opacity-70  "/>
-                      <a 
-                        title="Link para página do portifólio do Desenvolvedor Humberto Queiroz" 
-                        rel="author" 
-                        href="https://humbertoqueiroz.github.io/"
-                        className="text-sm text-cyan-400 text-center items-center"
-                      >
-                        <div className=" text-center items-center">
-                          <span className="underline" >
-                            Conheça meu portifólio! 
-                          </span>
-                          &#128640;
-                      </div>
-                      </a>
+                      <h2 className="text-4xl mt-10 pl-14 pt-2 ">Desenvolvedor Web</h2>
+                      <p className="text-2xl ">Transformo café em código desde 2022</p>
                     </div>
                 </div>
               </header>
-              <div className="mx-20 my-4 p-4 border rounded-md">
+              <div className="mx-12 my-4 p-4 border rounded-md">
                 <h4 className="uppercase text-xl font-bold">Perfil pessoal</h4>
                 <p className="text-lg">
                   Com experiência em TI, sou um profissional aplicado e dedicado à otimização de processos e sistemas. Minha afinidade com tecnologia e minha boa comunicação me permite entender as necessidades dos usuários e propor soluções eficazes. Atualmente, estou expandindo meus conhecimentos em programação para contribuir ainda mais com projetos inovadores
@@ -96,7 +97,8 @@ export function App() {
               </h2>
             </div>
           </div>
-        </div>  
+        </div> 
+      </div>
     </div>
     
   )
