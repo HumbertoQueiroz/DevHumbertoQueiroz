@@ -1,4 +1,4 @@
-import { ImgHTMLAttributes } from 'react';
+import type { ImgHTMLAttributes } from 'react';
 
 interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement>{
   urlImg:string
@@ -15,7 +15,7 @@ interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement>{
 export function Avatar({urlImg, ...props}:AvatarProps){
 return(
 <div className="w-full  flex flex-col items-center">
-  <img src={urlImg} {...props} className="rounded-full w-3/4 my-4 ring-2 ring-[#05d3f8]" title={props.alt}/>
+<img src={urlImg} {...props} className="rounded-full w-3/4 my-4 ring-2 ring-[#05d3f8]" title={props.alt} alt={props.alt}/>
 </div>
 )
 }
