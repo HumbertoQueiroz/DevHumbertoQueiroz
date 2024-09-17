@@ -1,8 +1,8 @@
-import { Atom, FileTs, UserCircleCheck } from "@phosphor-icons/react";
+import { Atom, BookBookmark, Bookmark, FileTs, UserCircleCheck } from "@phosphor-icons/react";
 import { Avatar } from "./components/Avatar";
 import { Skill } from "./components/Skill";
 import { LinkPortifolio } from "./components/LinkPortifolio";
-import { ItemLinst } from "./components/ItemList";
+import { ItemList } from "./components/ItemList";
 
 //Paleta de cores base https://paletadecores.com/paleta/3a3132/0f4571/386dbd/009ddd/05d3f8/
 
@@ -55,7 +55,7 @@ export function App() {
                 </div>
               </header>
               <div className="mx-12 my-4 p-4 border rounded-md">
-                <h4 className="uppercase text-xl font-bold">Perfil pessoal</h4>
+                <h4 className="uppercase text-xl font-bold my-1">Perfil pessoal</h4>
                 <p className="text-lg">
                   Com experiência em TI, sou um profissional aplicado e dedicado
                   à otimização de processos e sistemas. Minha afinidade com
@@ -66,7 +66,7 @@ export function App() {
                 </p>
               </div>
               <div className="flex flex-col mx-12 my-4 p-4 border rounded-md">
-                <h2 className="text-xl font-bold uppercase ">
+                <h2 className="text-xl font-bold uppercase my-1">
                   Linguagens de Programação
                 </h2>
                 <div className="flex gap-6 my-2">
@@ -131,26 +131,115 @@ export function App() {
                 </div>
               </div>
               <div className="mx-12 my-4 p-4 border rounded-md">
-                <h4 className="uppercase text-xl font-bold">
+                <h4 className="uppercase text-xl font-bold my-1">
                   Histórico profissional
                 </h4>
                 <ul>
-                  <ItemLinst title='Analista de Desenvolvimento Junior' date="04/2024 - Atual" organization="Cooperfibra" description="Desenvolvimento de rotinas, relatórios e views em ADVPL e SQL SERVER" />
-                  <li>teste</li>
-                  <li>teste</li>
-                  <li>test</li>
+                  <ItemList 
+                    title='Analista de Desenvolvimento Junior' 
+                    date="04/2024 - Atual" 
+                    organization="Cooperfibra" 
+                    description="Desenvolvimento de rotinas, relatórios e views em ADVPL e SQL SERVER." 
+                  />
+                  <ItemList 
+                    title="Analista de Suporte" 
+                    date="02/2023 - 04/2024" 
+                    organization="Millenium Software" 
+                    description="Suporte técnico aos usuários dos sistemas Millenium, treinamento ao usuário, documentação de manuais ao usuário e teste de software"
+                  />
+                  <ItemList 
+                    title="Assistente de T.I." 
+                    date="05/2022 - 01/2023" 
+                    organization="AgroVargas" 
+                    description="Instalação e configuração de sistemas computacionais. Administração de ambientes computacionais, controle de níveis de acesso, banco de dados e redes."
+                  />
                 </ul>
-                <p className="text-lg">
-                  Com experiência em TI, sou um profissional aplicado e dedicado
-                  à otimização de processos e sistemas. Minha afinidade com
-                  tecnologia e minha boa comunicação me permitem entender as
-                  necessidades dos usuários e propor soluções eficazes.
-                  Atualmente, estou expandindo meus conhecimentos em programação
-                  para contribuir ainda mais com projetos inovadores.
-                </p>
               </div>
-
-              <h2>Transformo café em código desde 2023.</h2>
+              <div className="mx-12 my-4 p-4 border rounded-md">
+                <h4 className="uppercase text-xl font-bold my-1">Histórico Acadêmico</h4>
+                <ul>
+                  <div className="flex flex-col mt-2">
+                    <div className="flex items-center">
+                    <BookBookmark size={16} weight="bold" className="mr-1 text-[#009ddd]"/>
+                      <li className="font-medium text-base">Técnico em Análise e Desenvolvimento de Sistemas</li>
+                    </div>
+                    <p className="ml-5 text-sm font-light">IFMT - Campos Campo Verde - 2013 - Cursando</p>
+                  </div>
+                  <div className="flex flex-col mt-2">
+                    <div className="flex items-center">
+                    <BookBookmark size={16} weight="bold" className="mr-1 text-[#009ddd]"/>
+                      <li className="font-medium text-base">Bacharelado em Direito</li>
+                    </div>
+                    <p className="ml-5 text-sm font-light">UNIC - Universidade de Cuiabá - 2014 - 2018</p>
+                  </div>
+                </ul>
+              </div>
+              <div className="mx-12 my-4 p-4 border rounded-md">
+                <h4 className="uppercase text-xl font-bold my-1">cursos</h4>
+                <ul>
+                  <div className="flex flex-col mt-2">
+                    <div className="flex flex-col text-slate-400 text-sm gap-2 ">
+                      <div>
+                        <div className="flex items-center group">
+                          <span className="w-1 h-5 mr-1 group-hover:w-2 duration-150  bg-[#05d3f8]"/>
+                          <a href="https://www.rocketseat.com.br/formacao/react" target='blank' className='font-semibold uppercase text-[#085EC5] group-hover:border-b-2 border-b-[#05d3f8]' title='Clique para ir para página de validação dos certificados'>REACT
+                          </a>
+                        </div>
+                        <p className="ml-1 text-xs opacity-50"> Conheça mais sobre o curso clicando no link acima</p>
+                      </div>
+                      <li className="mb-2">Rocketseat - Formação em React (10/2023) 30 horas </li>
+                      <div>
+                        <div className="flex items-center group">
+                        <span className="w-1 h-5 mr-1 bg-[#A435F0] group-hover:w-2 duration-150"/>
+                          <a href="https://www.udemy.com/course/fundamentos-da-web-que-todo-dev-precisa-saber/?couponCode=ST11MT91624A" target='blank' className=' font-bold text-[#085EC5] group-hover:border-b-2 border-b-[#A435F0] ' title='Clique para ir para página de validação dos certificados'>PROGRAMAÇÃO WEB MODERNO
+                          </a>
+                        </div>
+                        <p className="ml-1 text-xs opacity-50"> Conheça mais sobre o curso clicando no link acima</p>
+                      </div>
+                      <li className="mb-2">Udemy - Curso Programador Web 2.0 Moderno (09/2022) 40,5 horas </li>
+                      <div className="flex items-center group ">
+                        <span className="w-1 h-5 mr-1 bg-[#0546f8] group-hover:w-2 duration-150"/>
+                        <a href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f" target='blank' title='Clique para ir para página de validação dos certificados'
+                        className='font-semibold uppercase uppercase text-[#085EC5] group-hover:border-b-2 border-b-[#085EC5]'>
+                          Front end - 106hs
+                        </a>
+                      </div>
+                      <div className="flex">
+                        <p className="ml-1 text-xs opacity-50"> Valide os certificados listados abaixo clicando no link acima</p>
+                      </div>
+                      <li>Flexbox: posicione elementos na tela (de 02/02/2022 a 10/02/2022) 9hrs</li>
+                      <li>CSS Grid: simplificando layouts (de 10/02/2022 a 19/02/2022) 8hrs</li>
+                      <li>HTML5 e CSS3 parte 1: crie uma página da Web (de 12/07/2021 a 25/07/2021) 8hrs</li>
+                      <li>HTML5 e CSS3 parte 2: posicionamento, listas e navegação (de 21/07/2021 a 25/07/2021) 8hrs</li>
+                      <li>Arquitetura CSS: descomplicando os problemas (de 14/01/2022 a 30/01/2022) 8hrs</li>
+                      <li>HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas (de 25/07/2021 a 28/07/2021) 8hrs</li>
+                      <li>HTML5 e CSS3 parte 4: avançando no CSS (de 29/07/2021 a 07/08/2021) 8hrs</li>
+                      <li>JavaScript: explorando a linguagem (de 17/08/2021 a 19/09/2021) 10hrs</li>
+                      <li>Layouts Responsivos: trabalhando com layouts mobile (de 27/12/2021 a 14/01/2022) 7hrs</li>
+                      <li>JavaScript: programando a Orientação a Objetos (de 12/11/2021 a 01/12/2021) 10hrs</li>
+                      <li>JavaScript: interfaces e Herança em Orientação a Objetos (de 01/12/2021 a 02/12/2021) 12hrs  </li>
+                      <li>JavaScript para Web: Crie páginas dinâmicas (de 08/02/2022 a 07/06/2022) 10hrs</li>
+                      <div className="flex items-center">
+                        <span className="w-1 h-5 mr-1 bg-lime-500"/>
+                        <p className='font-semibold uppercase text-[#085EC5]'>Data Science - 76hs</p>
+                      </div>
+                      <p>Excel: simulação e análise de cenários (de 12/01/2022 a 10/03/2022) 6hrs</p>
+                      <p>Excel: domine o editor de planilhas (de 29/07/2021 a 21/02/2022) 10hrs</p>
+                      <p>Funções com Excel: operações matemáticas e filtros (de 09/02/2022 a 25/02/2022) 10hrs</p>
+                      <p>Excel procv: lógica booleana e busca por valores (de 30/07/2021 a 16/09/2021) 12hrs</p>
+                      <p>Excel: tabelas dinâmicas e dashboards (de 27/07/2021 a 28/07/2021) 10hrs</p>
+                      <p>Excel: criação de macros e automatização de tarefas (de 16/02/2022 a 27/02/2022) 12hrs</p>
+                      <p>Excel: personalizando e automatizando tarefas com VBA (de 04/01/2022 a 04/03/2022) 8hrs</p>
+                      <p>Power BI Desktop: construindo meu primeiro dashboard (de 29/07/2021 a 02/08/2021) 8hrs</p>
+                      <div className="flex items-center">
+                        <span className="w-1 h-5 mr-1 bg-red-400"/>
+                        <p className='text-base font-semibold uppercase text-[#085EC5]'>DevOps - 10hs</p>
+                      </div>
+                      <p>Redes parte 1: conceitos e prática (de 25/05/2022 a 02/06/2022) 10hrs</p>
+                    </div>
+                  </div>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
