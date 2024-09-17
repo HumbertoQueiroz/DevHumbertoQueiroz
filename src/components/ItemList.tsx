@@ -4,6 +4,16 @@ interface textItemList{
   organization:string
   description?: string
 }
+
+/**
+ * Esse **Componente** cria um item de uma lista
+ * @param {string} title *Type: string.* - Título
+ * @param {string} date *Type: string.* - Data
+ * @param {string} organization *Type: string.* - Organização/Empresa
+ * @param {string} description *Type: string.* - Descrição - opcional
+ */
+
+
 export function ItemList({title, date, organization, description}:textItemList) {
   return (
     <div className="flex flex-col mt-2">
