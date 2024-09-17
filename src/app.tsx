@@ -1,4 +1,4 @@
-import { Atom, BookBookmark, Bookmark, FileTs, UserCircleCheck } from "@phosphor-icons/react";
+import { Atom, BookBookmark, FileTs, UserCircleCheck } from "@phosphor-icons/react";
 import { Avatar } from "./components/Avatar";
 import { Skill } from "./components/Skill";
 import { LinkPortifolio } from "./components/LinkPortifolio";
