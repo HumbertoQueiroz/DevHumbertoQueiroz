@@ -1,6 +1,6 @@
 import type { ImgHTMLAttributes } from "react";
 
-interface SkillInterface extends ImgHTMLAttributes<HTMLImageElement> {
+interface ButtonImgInterface extends ImgHTMLAttributes<HTMLImageElement> {
   hasComponent: boolean;
   icon?: React.ReactNode;
   urlImg?: string;
@@ -10,7 +10,7 @@ interface SkillInterface extends ImgHTMLAttributes<HTMLImageElement> {
 }
 
 /**
- * Esse **Componente** cria um 'elemento' com ícone e nome da skill (conhecimento), com background pré-definido.
+ * Esse **Componente** cria um 'elemento' com ícone e nome da ButtonImg (conhecimento), com background pré-definido.
  * @param {boolean} hasComponent *Type: Boolean* - Verifica se receberá um componente (**true**) como imagem ou se é uma url de imagem (**false**).
  * @param {React.ReactNode} icon *Type: Component.* - Componente que será usado como ícone, não deve ser informado caso vá usar url de imagem, propriedade **urlImg**, passar componente com tamanho *"size"*.
  * @param {string} urlImg *Type: string.* - URL da imagem que será usado como ícone, não deve ser informado caso vá usar componente, propriedade **icon**.
@@ -19,7 +19,7 @@ interface SkillInterface extends ImgHTMLAttributes<HTMLImageElement> {
  * @param {string} color *Type: string.* - Cor que será usada no ícone do componente passado no propriedade **icon**
  * @returns
  */
-export function Skill({
+export function ButtonImg({
   hasComponent,
   icon,
   urlImg,
@@ -27,7 +27,7 @@ export function Skill({
   text,
   color,
   ...props
-}: SkillInterface) {
+}: ButtonImgInterface) {
   if (hasComponent) {
     return (
       <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200 duration-100">
