@@ -4,7 +4,6 @@ import {
   EnvelopeSimple,
   FileTs,
   LinkedinLogo,
-  PhosphorLogo,
   UserCircleCheck,
   WhatsappLogo,
 } from "@phosphor-icons/react";
@@ -172,17 +171,54 @@ export function App() {
                     size="w-4"
                   />
                 </div>
-                <h4 className="uppercase font-bold my-4">Framework / relacionados</h4>
+                <h4 className="uppercase font-bold my-4">
+                  Framework / relacionados
+                </h4>
                 <div className="flex gap-2 mb-2">
-                  <Skill hasComponent={false} urlImg="radix.svg" text="Radix" size="w-3" />
-                  <Skill hasComponent={false} urlImg="react-hot-toast.png" text="React Hot Toast" size="w-3" />
-                  <Skill hasComponent={false} urlImg="phosphor-icon.png" text="Phosphor-icon" size="w-3" />
+                  <Skill
+                    hasComponent={false}
+                    urlImg="radix.svg"
+                    text="Radix"
+                    size="w-3"
+                  />
+                  <Skill
+                    hasComponent={false}
+                    urlImg="react-hot-toast.png"
+                    text="React Hot Toast"
+                    size="w-3"
+                  />
+                  <Skill
+                    hasComponent={false}
+                    urlImg="phosphor-icon.png"
+                    text="Phosphor-icon"
+                    size="w-3"
+                  />
                 </div>
                 <div className="flex gap-2">
-                  <Skill hasComponent={false} urlImg="versel.png" text="Versel" size="w-3" />
-                  <Skill hasComponent={false} urlImg="sonner.png" text="Sonner" size="w-3" />
-                  <Skill hasComponent={false} urlImg="markdown.png" text="Markdown" size="w-4" />
-                  <Skill hasComponent={false} urlImg="javascript.svg" text="JSDoc" size="w-4" />
+                  <Skill
+                    hasComponent={false}
+                    urlImg="versel.png"
+                    text="Versel"
+                    size="w-3"
+                  />
+                  <Skill
+                    hasComponent={false}
+                    urlImg="sonner.png"
+                    text="Sonner"
+                    size="w-3"
+                  />
+                  <Skill
+                    hasComponent={false}
+                    urlImg="markdown.png"
+                    text="Markdown"
+                    size="w-4"
+                  />
+                  <Skill
+                    hasComponent={false}
+                    urlImg="javascript.svg"
+                    text="JSDoc"
+                    size="w-4"
+                  />
                 </div>
               </div>
               <div className="mx-12 my-4 p-4 border rounded-md">
@@ -402,7 +438,7 @@ export function App() {
                                   para validar os cursos na Alura
                                 </p>
                                 <p className="my-2">
-                                  Data Science (07/2021 a 03/2022) 76hs{" "}
+                                  Alura - Data Science (07/2021 a 03/2022) 76hs{" "}
                                 </p>
                               </div>
                             </Accordion.Trigger>
@@ -470,7 +506,9 @@ export function App() {
                                   </a>{" "}
                                   para validar os cursos na Alura
                                 </p>
-                                <p className="my-2">DevOps (06/2022) 10hs</p>
+                                <p className="my-2">
+                                  Alura - DevOps (06/2022) 10hs
+                                </p>
                               </div>
                             </Accordion.Trigger>
                           </Accordion.Header>
