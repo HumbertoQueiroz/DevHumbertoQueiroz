@@ -12,6 +12,7 @@ import { Skill } from "./components/Skill";
 import { LinkPortifolio } from "./components/LinkPortifolio";
 import { ItemList } from "./components/ItemList";
 import { ItemListCenter } from "./components/ItemListCenter";
+import * as Accordion from "@radix-ui/react-accordion";
 
 //Paleta de cores base https://paletadecores.com/paleta/3a3132/0f4571/386dbd/009ddd/05d3f8/
 
@@ -57,7 +58,7 @@ export function App() {
                 <a
                   href="https://www.linkedin.com/in/humberto-queiroz-37385a1b6/"
                   target="blank"
-                  title="Clique para meu linkedin"
+                  title="Clique para ir ao meu Linkedin"
                 >
                   <ItemListCenter
                     icon={<LinkedinLogo size={16} />}
@@ -244,14 +245,13 @@ export function App() {
                           <a
                             href="https://www.rocketseat.com.br/formacao/react"
                             target="blank"
-                            className="font-semibold uppercase text-[#085EC5] group-hover:border-b-2 border-b-[#05d3f8]"
+                            className="font-semibold uppercase text-[#085EC5]"
                             title="Clique para ir para página de validação dos certificados"
                           >
                             REACT
                           </a>
                         </div>
                         <p className="ml-1 text-xs opacity-50">
-                          {" "}
                           Conheça mais sobre o curso clicando no link acima
                         </p>
                       </div>
@@ -264,14 +264,13 @@ export function App() {
                           <a
                             href="https://www.udemy.com/course/fundamentos-da-web-que-todo-dev-precisa-saber/?couponCode=ST11MT91624A"
                             target="blank"
-                            className=" font-bold text-[#085EC5] group-hover:border-b-2 border-b-[#A435F0] "
+                            className=" font-bold text-[#085EC5] "
                             title="Clique para ir para página de validação dos certificados"
                           >
                             PROGRAMAÇÃO WEB MODERNO
                           </a>
                         </div>
                         <p className="ml-1 text-xs opacity-50">
-                          {" "}
                           Conheça mais sobre o curso clicando no link acima
                         </p>
                       </div>
@@ -279,120 +278,197 @@ export function App() {
                         Udemy - Curso Programador Web 2.0 Moderno (09/2022) 40,5
                         horas{" "}
                       </li>
-                      <div className="flex items-center group ">
-                        <span className="w-1 h-5 mr-1 bg-[#0546f8] group-hover:w-2 duration-150" />
-                        <a
-                          href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
-                          target="blank"
-                          title="Clique para ir para página de validação dos certificados"
-                          className="font-semibold uppercase text-[#085EC5] group-hover:border-b-2 border-b-[#085EC5]"
-                        >
-                          Front end - 106hs
-                        </a>
-                      </div>
-                      <div className="flex">
-                        <p className="ml-1 text-xs opacity-50">
-                          {" "}
-                          Valide os certificados listados abaixo clicando no
-                          link acima
-                        </p>
-                      </div>
-                      <li>
-                        Flexbox: posicione elementos na tela (de 02/02/2022 a
-                        10/02/2022) 9hrs
-                      </li>
-                      <li>
-                        CSS Grid: simplificando layouts (de 10/02/2022 a
-                        19/02/2022) 8hrs
-                      </li>
-                      <li>
-                        HTML5 e CSS3 parte 1: crie uma página da Web (de
-                        12/07/2021 a 25/07/2021) 8hrs
-                      </li>
-                      <li>
-                        HTML5 e CSS3 parte 2: posicionamento, listas e navegação
-                        (de 21/07/2021 a 25/07/2021) 8hrs
-                      </li>
-                      <li>
-                        Arquitetura CSS: descomplicando os problemas (de
-                        14/01/2022 a 30/01/2022) 8hrs
-                      </li>
-                      <li>
-                        HTML5 e CSS3 parte 3: trabalhando com formulários e
-                        tabelas (de 25/07/2021 a 28/07/2021) 8hrs
-                      </li>
-                      <li>
-                        HTML5 e CSS3 parte 4: avançando no CSS (de 29/07/2021 a
-                        07/08/2021) 8hrs
-                      </li>
-                      <li>
-                        JavaScript: explorando a linguagem (de 17/08/2021 a
-                        19/09/2021) 10hrs
-                      </li>
-                      <li>
-                        Layouts Responsivos: trabalhando com layouts mobile (de
-                        27/12/2021 a 14/01/2022) 7hrs
-                      </li>
-                      <li>
-                        JavaScript: programando a Orientação a Objetos (de
-                        12/11/2021 a 01/12/2021) 10hrs
-                      </li>
-                      <li>
-                        JavaScript: interfaces e Herança em Orientação a Objetos
-                        (de 01/12/2021 a 02/12/2021) 12hrs{" "}
-                      </li>
-                      <li>
-                        JavaScript para Web: Crie páginas dinâmicas (de
-                        08/02/2022 a 07/06/2022) 10hrs
-                      </li>
-                      <div className="flex items-center">
-                        <span className="w-1 h-5 mr-1 bg-lime-500" />
-                        <p className="font-semibold uppercase text-[#085EC5]">
-                          Data Science - 76hs
-                        </p>
-                      </div>
-                      <p>
-                        Excel: simulação e análise de cenários (de 12/01/2022 a
-                        10/03/2022) 6hrs
-                      </p>
-                      <p>
-                        Excel: domine o editor de planilhas (de 29/07/2021 a
-                        21/02/2022) 10hrs
-                      </p>
-                      <p>
-                        Funções com Excel: operações matemáticas e filtros (de
-                        09/02/2022 a 25/02/2022) 10hrs
-                      </p>
-                      <p>
-                        Excel procv: lógica booleana e busca por valores (de
-                        30/07/2021 a 16/09/2021) 12hrs
-                      </p>
-                      <p>
-                        Excel: tabelas dinâmicas e dashboards (de 27/07/2021 a
-                        28/07/2021) 10hrs
-                      </p>
-                      <p>
-                        Excel: criação de macros e automatização de tarefas (de
-                        16/02/2022 a 27/02/2022) 12hrs
-                      </p>
-                      <p>
-                        Excel: personalizando e automatizando tarefas com VBA
-                        (de 04/01/2022 a 04/03/2022) 8hrs
-                      </p>
-                      <p>
-                        Power BI Desktop: construindo meu primeiro dashboard (de
-                        29/07/2021 a 02/08/2021) 8hrs
-                      </p>
-                      <div className="flex items-center">
-                        <span className="w-1 h-5 mr-1 bg-red-400" />
-                        <p className="text-base font-semibold uppercase text-[#085EC5]">
-                          DevOps - 10hs
-                        </p>
-                      </div>
-                      <p>
-                        Redes parte 1: conceitos e prática (de 25/05/2022 a
-                        02/06/2022) 10hrs
-                      </p>
+                      <Accordion.Root type="single" collapsible>
+                        <Accordion.Item value="item-1">
+                          <Accordion.Header>
+                            <Accordion.Trigger>
+                              <div className="flex items-center group ">
+                                <span className="w-1 h-5 mr-1 bg-[#0546f8] group-hover:w-2 duration-150" />
+                                <p
+                                  className="font-semibold uppercase text-[#085EC5]"
+                                  title="Clique aqui para expandir os cursos"
+                                >
+                                  Front end - html, css, js
+                                </p>
+                              </div>
+                              <div className="flex flex-col items-start">
+                                <p className="ml-1 text-xs opacity-50">
+                                  Clique acima para ver todos os cursos ou{" "}
+                                  <a
+                                    href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
+                                    target="blank"
+                                    title="Clique para ir para página de validação dos certificados"
+                                    className="text-blue-500 underline"
+                                  >
+                                    clique aqui
+                                  </a>{" "}
+                                  para validar os cursos na Alura
+                                </p>
+                                <p className="my-2">
+                                  Alura - Front End (07/2021 a 06/2022) 106hs{" "}
+                                </p>
+                              </div>
+                            </Accordion.Trigger>
+                          </Accordion.Header>
+                          <Accordion.Content className="flex flex-col gap-2 opacity-80">
+                            <li>
+                              Flexbox: posicione elementos na tela (de
+                              02/02/2022 a 10/02/2022) 9hrs
+                            </li>
+                            <li>
+                              CSS Grid: simplificando layouts (de 10/02/2022 a
+                              19/02/2022) 8hrs
+                            </li>
+                            <li>
+                              HTML5 e CSS3 parte 1: crie uma página da Web (de
+                              12/07/2021 a 25/07/2021) 8hrs
+                            </li>
+                            <li>
+                              HTML5 e CSS3 parte 2: posicionamento, listas e
+                              navegação (de 21/07/2021 a 25/07/2021) 8hrs
+                            </li>
+                            <li>
+                              Arquitetura CSS: descomplicando os problemas (de
+                              14/01/2022 a 30/01/2022) 8hrs
+                            </li>
+                            <li>
+                              HTML5 e CSS3 parte 3: trabalhando com formulários
+                              e tabelas (de 25/07/2021 a 28/07/2021) 8hrs
+                            </li>
+                            <li>
+                              HTML5 e CSS3 parte 4: avançando no CSS (de
+                              29/07/2021 a 07/08/2021) 8hrs
+                            </li>
+                            <li>
+                              JavaScript: explorando a linguagem (de 17/08/2021
+                              a 19/09/2021) 10hrs
+                            </li>
+                            <li>
+                              Layouts Responsivos: trabalhando com layouts
+                              mobile (de 27/12/2021 a 14/01/2022) 7hrs
+                            </li>
+                            <li>
+                              JavaScript: programando a Orientação a Objetos (de
+                              12/11/2021 a 01/12/2021) 10hrs
+                            </li>
+                            <li>
+                              JavaScript: interfaces e Herança em Orientação a
+                              Objetos (de 01/12/2021 a 02/12/2021) 12hrs{" "}
+                            </li>
+                            <li>
+                              JavaScript para Web: Crie páginas dinâmicas (de
+                              08/02/2022 a 07/06/2022) 10hrs
+                            </li>
+                          </Accordion.Content>
+                        </Accordion.Item>
+                      </Accordion.Root>
+                      <Accordion.Root type="single" collapsible>
+                        <Accordion.Item value="item-1">
+                          <Accordion.Header>
+                            <Accordion.Trigger>
+                              <div className="flex items-center group">
+                                <span className="w-1 h-5 mr-1 bg-lime-500 group-hover:w-2 duration-150" />
+                                <p
+                                  className="font-semibold uppercase text-[#085EC5]"
+                                  title="Clique aqui para expandir os cursos"
+                                >
+                                  Data Science
+                                </p>
+                              </div>
+                              <div className="flex flex-col items-start">
+                                <p className="ml-1 text-xs opacity-50">
+                                  Clique acima para ver todos os cursos ou{" "}
+                                  <a
+                                    href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
+                                    target="blank"
+                                    title="Clique para ir para página de validação dos certificados"
+                                    className="text-blue-500 underline"
+                                  >
+                                    clique aqui
+                                  </a>{" "}
+                                  para validar os cursos na Alura
+                                </p>
+                                <p className="my-2">
+                                  Data Science (07/2021 a 03/2022) 76hs{" "}
+                                </p>
+                              </div>
+                            </Accordion.Trigger>
+                          </Accordion.Header>
+                          <Accordion.Content className="flex flex-col gap-2 opacity-80">
+                            <p>
+                              Excel: simulação e análise de cenários (de
+                              12/01/2022 a 10/03/2022) 6hrs
+                            </p>
+                            <p>
+                              Excel: domine o editor de planilhas (de 29/07/2021
+                              a 21/02/2022) 10hrs
+                            </p>
+                            <p>
+                              Funções com Excel: operações matemáticas e filtros
+                              (de 09/02/2022 a 25/02/2022) 10hrs
+                            </p>
+                            <p>
+                              Excel procv: lógica booleana e busca por valores
+                              (de 30/07/2021 a 16/09/2021) 12hrs
+                            </p>
+                            <p>
+                              Excel: tabelas dinâmicas e dashboards (de
+                              27/07/2021 a 28/07/2021) 10hrs
+                            </p>
+                            <p>
+                              Excel: criação de macros e automatização de
+                              tarefas (de 16/02/2022 a 27/02/2022) 12hrs
+                            </p>
+                            <p>
+                              Excel: personalizando e automatizando tarefas com
+                              VBA (de 04/01/2022 a 04/03/2022) 8hrs
+                            </p>
+                            <p>
+                              Power BI Desktop: construindo meu primeiro
+                              dashboard (de 29/07/2021 a 02/08/2021) 8hrs
+                            </p>
+                          </Accordion.Content>
+                        </Accordion.Item>
+                      </Accordion.Root>
+                      <Accordion.Root type="single" collapsible>
+                        <Accordion.Item value="item-1">
+                          <Accordion.Header>
+                            <Accordion.Trigger>
+                              <div className="flex items-center group">
+                                <span className="w-1 h-5 mr-1 bg-red-400 group-hover:w-2 duration-150" />
+                                <p
+                                  className="text-base font-semibold uppercase text-[#085EC5]"
+                                  title="Clique aqui para expandir os cursos"
+                                >
+                                  DevOps
+                                </p>
+                              </div>
+                              <div className="flex flex-col items-start">
+                                <p className="ml-1 text-xs opacity-50">
+                                  {" "}
+                                  Clique acima para ver todos os cursos ou{" "}
+                                  <a
+                                    href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
+                                    target="blank"
+                                    title="Clique para ir para página de validação dos certificados"
+                                    className="text-blue-500 underline"
+                                  >
+                                    clique aqui
+                                  </a>{" "}
+                                  para validar os cursos na Alura
+                                </p>
+                                <p className="my-2">DevOps (06/2022) 10hs</p>
+                              </div>
+                            </Accordion.Trigger>
+                          </Accordion.Header>
+                          <Accordion.Content className="flex flex-col gap-2 opacity-80">
+                            <p>
+                              Redes parte 1: conceitos e prática (de 25/05/2022
+                              a 02/06/2022) 10hrs
+                            </p>
+                          </Accordion.Content>
+                        </Accordion.Item>
+                      </Accordion.Root>
                     </div>
                   </div>
                 </ul>
