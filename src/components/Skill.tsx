@@ -1,12 +1,12 @@
-import {ImgHTMLAttributes } from "react";
+import type { ImgHTMLAttributes } from "react";
 
-interface SkillInterface extends ImgHTMLAttributes <HTMLImageElement> {
-  hasComponent:boolean
-  icon?:React.ReactNode;
-  urlImg?:string
-  size?:string
-  text:string
-  color?:string
+interface SkillInterface extends ImgHTMLAttributes<HTMLImageElement> {
+  hasComponent: boolean;
+  icon?: React.ReactNode;
+  urlImg?: string;
+  size?: string;
+  text: string;
+  color?: string;
 }
 
 /**
@@ -17,25 +17,31 @@ interface SkillInterface extends ImgHTMLAttributes <HTMLImageElement> {
  * @param {string} size *Type: string.* - Tamanho que será renderizado a imagem do propriedade **urlImg**, passar **propriedade do Tailwind**, usado dentro da className.
  * @param {string} text *Type: string.* - Texto que será exibido.
  * @param {string} color *Type: string.* - Cor que será usada no ícone do componente passado no propriedade **icon**
- * @returns 
+ * @returns
  */
-export function Skill ({hasComponent,icon, urlImg, size, text, color,...props}:SkillInterface){
-  if(hasComponent){
-    return(
+export function Skill({
+  hasComponent,
+  icon,
+  urlImg,
+  size,
+  text,
+  color,
+  ...props
+}: SkillInterface) {
+  if (hasComponent) {
+    return (
       <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200 duration-100">
         <div className={color} {...props}>
-        {icon}
+          {icon}
         </div>
         <h3>{text}</h3>
       </div>
-    )
-  } else{
-    return(
+    );
+  }
+    return (
       <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200 duration-100">
         <img src={urlImg} alt="" className={` rounded-sm ${size}`} />
         <h3>{text}</h3>
       </div>
-    )
-  }
-  
+    );
 }
