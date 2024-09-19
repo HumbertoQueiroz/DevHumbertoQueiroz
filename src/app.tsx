@@ -13,6 +13,7 @@ import { LinkPortifolio } from "./components/LinkPortifolio";
 import { ItemList } from "./components/ItemList";
 import { ItemListCenter } from "./components/ItemListCenter";
 import * as Accordion from "@radix-ui/react-accordion";
+import { Skill } from "./components/Skill";
 
 //Paleta de cores base https://paletadecores.com/paleta/3a3132/0f4571/386dbd/009ddd/05d3f8/
 
@@ -45,12 +46,14 @@ export function App() {
               />
               <div className="mx-4 ml-8">
                 <h5 className="mb-4 text-white">
-                  {age} anos, solteiro, CNH A e B, disponível para mudança,
-                  trabalho presencial ou home-office.
+                  {age} anos, solteiro, CNH A e B, disponível para home-office,
+                  trabalho presencial ou mudança.
                 </h5>
               </div>
-              <p className="uppercase mx-2 font-medium">contato</p>
-              <div className="mx-4 text-sm">
+              <p className="uppercase mx-2 text-lg font-bold mt-8 mb-2">
+                contato
+              </p>
+              <div className="mx-4 text-sm flex flex-col gap-2">
                 <ItemListCenter
                   icon={<EnvelopeSimple size={16} />}
                   text="devhumbertoqueiroz@gmail.com"
@@ -76,8 +79,20 @@ export function App() {
                   />
                 </a>
               </div>
+              <p className="uppercase mx-2 text-lg font-bold mt-6 mb-2">
+                Hardskill
+              </p>
+              <div className="mx-4 text-sm">
+                <Skill levelSkill={6} textSkill="JavaScript" />
+                <Skill levelSkill={5} textSkill="React" />
+                <Skill levelSkill={5} textSkill="HTML" />
+                <Skill levelSkill={4} textSkill="Typescript" />
+                <Skill levelSkill={4} textSkill="CSS" />
+                <Skill levelSkill={4} textSkill="MySQL" />
+                <Skill levelSkill={4} textSkill="SQLServer" />
+                <Skill levelSkill={3} textSkill="ADVPL" />
+              </div>
             </div>
-
             <div className="w-3/4 bg-white">
               <header className="flex flex-col items-center">
                 <h1 className="mt-16 text-[#0f4571] text-6xl font-bold border-b-4 border-[#009ddd]  mb-4">
@@ -130,12 +145,6 @@ export function App() {
                     text="MySQL"
                     size="w-4"
                   />
-                  <ButtonImg
-                    hasComponent={true}
-                    icon={<UserCircleCheck size={16} />}
-                    text="UX/UI"
-                    color="text-purple-600"
-                  />
                 </div>
                 <div className="flex gap-7 my-2">
                   <ButtonImg
@@ -171,34 +180,54 @@ export function App() {
                     size="w-4"
                   />
                 </div>
-                <h4 className="uppercase font-bold my-4">
+              </div>
+              <div className="flex flex-col mx-12 my-4 p-4 border rounded-md">
+                <h4 className="text-xl font-bold uppercase my-1">
                   Framework / relacionados
                 </h4>
-                <div className="flex gap-2 mb-2">
+                <div className="flex gap-3 my-4">
+                  <ButtonImg
+                    hasComponent={false}
+                    urlImg="tailwind.png"
+                    text="Tailwind"
+                    size="w-3"
+                  />
+                  <ButtonImg
+                    hasComponent={false}
+                    urlImg="versel.png"
+                    text="Versel"
+                    size="w-3"
+                  />
+                  <ButtonImg
+                    hasComponent={false}
+                    urlImg="bootstrap.png"
+                    text="Bootstrap"
+                    size="w-3"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<UserCircleCheck size={16} />}
+                    text="UX/UI"
+                    color="text-purple-600"
+                  />
                   <ButtonImg
                     hasComponent={false}
                     urlImg="radix.svg"
                     text="Radix"
                     size="w-3"
                   />
-                  <ButtonImg
-                    hasComponent={false}
-                    urlImg="react-hot-toast.png"
-                    text="React Hot Toast"
-                    size="w-3"
-                  />
+                </div>
+                <div className="flex gap-3">
                   <ButtonImg
                     hasComponent={false}
                     urlImg="phosphor-icon.png"
                     text="Phosphor-icon"
                     size="w-3"
                   />
-                </div>
-                <div className="flex gap-2">
                   <ButtonImg
                     hasComponent={false}
-                    urlImg="versel.png"
-                    text="Versel"
+                    urlImg="react-hot-toast.png"
+                    text="React Hot Toast"
                     size="w-3"
                   />
                   <ButtonImg
