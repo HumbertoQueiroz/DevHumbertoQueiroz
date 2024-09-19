@@ -11,6 +11,7 @@ interface SkillInterface {
  */
 
 export function Skill({ levelSkill, textSkill }: SkillInterface) {
+  //função criada para gerar a escala de forma automática através de um for
   function CreateLevel(level: number) {
     let aux = level;
     const empty = "w-2 h-2 bg-slate-00 ring-1 ring-white m-1 rounded-full";

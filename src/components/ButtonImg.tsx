@@ -38,10 +38,10 @@ export function ButtonImg({
       </div>
     );
   }
-    return (
-      <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200 duration-100">
-        <img src={urlImg} alt="" className={` rounded-sm ${size}`} />
-        <h3>{text}</h3>
-      </div>
-    );
+  return (
+    <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200 duration-100">
+      <img src={urlImg} alt="" className={` rounded-sm ${size}`} />
+      <h3>{text}</h3>
+    </div>
+  );
 }

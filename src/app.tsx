@@ -39,7 +39,8 @@ export function App() {
         <LinkPortifolio />
         <div className="flex justify-center mb-4">
           <div className="w-[1044px]  border flex justify-between">
-            <div className="w-1/4 bg-[#0f4571] text-slate-100">
+            {/* _____________________///   CONTAINER BG AZUL  \\\___________________ */}
+            <div className="w-1/4 bg-[#0f4571] text-slate-100 pt-4">
               <Avatar
                 urlImg="fotoDevHumbertoQueiroz.JPG"
                 alt="Foto do desenvolvedor Humberto Queiroz"
@@ -51,7 +52,7 @@ export function App() {
                 </h5>
               </div>
               <p className="uppercase mx-2 text-lg font-bold mt-8 mb-2">
-                contato
+                contato 📲
               </p>
               <div className="mx-4 text-sm flex flex-col gap-2">
                 <ItemListCenter
@@ -80,7 +81,7 @@ export function App() {
                 </a>
               </div>
               <p className="uppercase mx-2 text-lg font-bold mt-6 mb-2">
-                Hardskill
+                Hardskill 💻
               </p>
               <div className="mx-4 text-sm">
                 <Skill levelSkill={6} textSkill="JavaScript" />
@@ -92,7 +93,18 @@ export function App() {
                 <Skill levelSkill={4} textSkill="SQLServer" />
                 <Skill levelSkill={3} textSkill="ADVPL" />
               </div>
+              <p className="uppercase mx-2 text-lg font-bold mt-6 mb-2">
+                Softskill 🤵
+              </p>
+              <div className="mx-4 text-sm">
+              <Skill levelSkill={6} textSkill="Comunicação" />
+              <Skill levelSkill={6} textSkill="Ética e Moral" />
+              <Skill levelSkill={6} textSkill="Organização" />
+              <Skill levelSkill={5} textSkill="Trabalho em Equipe" />
+              <Skill levelSkill={5} textSkill="Gerência de Tempo" />
+              </div>
             </div>
+            {/* _____________________///   CONTAINER ESQUERDO/PRINCIPAL  \\\___________________ */}
             <div className="w-3/4 bg-white">
               <header className="flex flex-col items-center">
                 <h1 className="mt-16 text-[#0f4571] text-6xl font-bold border-b-4 border-[#009ddd]  mb-4">
