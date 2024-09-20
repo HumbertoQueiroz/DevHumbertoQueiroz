@@ -19,7 +19,7 @@ export function Skill({ levelSkill, textSkill }: SkillInterface) {
     const divReturn = [];
 
     for (let i = 0; i < 6; i++) {
-      divReturn.push(<div className={aux < 1 ? empty : full} />);
+      divReturn.push(<div className={aux < 1 ? empty : full} key={i} />);
       aux--;
     }
     return <div className="flex">{divReturn}</div>;

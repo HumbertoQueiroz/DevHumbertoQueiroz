@@ -33,6 +33,11 @@ export function App() {
     "Muito obrigado por vir até aqui! Fique a vontade e explore o código desta página, desenvolvida em React.js"
   );
 
+  navigator.geolocation.getCurrentPosition((position) => {
+    console.log("Latitude 1", position.coords.latitude);
+    console.log("Longitude 1", position.coords.longitude);
+  });
+
   return (
     <div className="w-full flex justify-center">
       <div className="w-[1044px] flex flex-col">
@@ -97,11 +102,11 @@ export function App() {
                 Softskill 🤵
               </p>
               <div className="mx-4 text-sm">
-              <Skill levelSkill={6} textSkill="Comunicação" />
-              <Skill levelSkill={6} textSkill="Ética e Moral" />
-              <Skill levelSkill={6} textSkill="Organização" />
-              <Skill levelSkill={5} textSkill="Trabalho em Equipe" />
-              <Skill levelSkill={5} textSkill="Gerência de Tempo" />
+                <Skill levelSkill={6} textSkill="Comunicação" />
+                <Skill levelSkill={6} textSkill="Ética e Moral" />
+                <Skill levelSkill={6} textSkill="Organização" />
+                <Skill levelSkill={5} textSkill="Trabalho em Equipe" />
+                <Skill levelSkill={5} textSkill="Gerência de Tempo" />
               </div>
             </div>
             {/* _____________________///   CONTAINER ESQUERDO/PRINCIPAL  \\\___________________ */}
