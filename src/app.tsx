@@ -9,7 +9,7 @@ import {
 } from "@phosphor-icons/react";
 import { Avatar } from "./components/Avatar";
 import { ButtonImg } from "./components/ButtonImg";
-import { LinkPortifolio } from "./components/LinkPortifolio";
+import { LinkPortfolio } from "./components/LinkPortfolio";
 import { ItemList } from "./components/ItemList";
 import { ItemListCenter } from "./components/ItemListCenter";
 import * as Accordion from "@radix-ui/react-accordion";
@@ -36,7 +36,7 @@ export function App() {
   return (
     <div className="w-[1044px] lg:w-full  flex justify-center">
       <div className="w-[1044px] flex flex-col">
-        <LinkPortifolio />
+        <LinkPortfolio />
 
         <div className="flex justify-center mb-4">
           <div className="w-[1044px]  border flex justify-between">

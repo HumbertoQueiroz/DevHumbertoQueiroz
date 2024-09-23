@@ -8,7 +8,7 @@
  * @returns {Component} *Type: Componente.*
  */
 
-export function LinkPortifolio() {
+export function LinkPortfolio() {
   //Data de hoje em formato pt-br
   const dateToday = new Date().toLocaleDateString("pt-BR", {
     weekday: "long",
@@ -44,7 +44,7 @@ export function LinkPortifolio() {
           className="text-sm font-bold text-cyan-500 hover:bg-cyan-500 hover:text-white border-2 py-1 px-2 rounded border-cyan-500 "
           target="blank"
         >
-          Portifólio <span className="animate-pulse ml-1">&#128640;</span>
+          Portfólio <span className="animate-pulse ml-1">&#128640;</span>
         </a>
         <img
           src="/qrcode_portifolio.png"
