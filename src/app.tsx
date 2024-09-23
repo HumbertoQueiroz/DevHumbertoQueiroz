@@ -33,19 +33,15 @@ export function App() {
     "Muito obrigado por vir até aqui! Fique a vontade e explore o código desta página, desenvolvida em React.js"
   );
 
-  navigator.geolocation.getCurrentPosition((position) => {
-    console.log("Latitude 1", position.coords.latitude);
-    console.log("Longitude 1", position.coords.longitude);
-  });
-
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-[1044px] lg:w-full  flex justify-center">
       <div className="w-[1044px] flex flex-col">
         <LinkPortifolio />
+
         <div className="flex justify-center mb-4">
           <div className="w-[1044px]  border flex justify-between">
             {/* _____________________///   CONTAINER BG AZUL  \\\___________________ */}
-            <div className="w-1/4 bg-[#0f4571] text-slate-100 pt-4">
+            <div className="w-[261px] bg-[#0f4571] text-slate-100 pt-4">
               <Avatar
                 urlImg="fotoDevHumbertoQueiroz.JPG"
                 alt="Foto do desenvolvedor Humberto Queiroz"

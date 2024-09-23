@@ -1,3 +1,5 @@
+
+
 /**
  * Esse **Componente** cria uma linha superior com boas-vindas, um botão de link para o protifólio e uma imagem do QRCode
  *
@@ -14,6 +16,20 @@ export function LinkPortifolio() {
     month: "long",
     day: "numeric",
   });
+
+
+  function Localization(latitude:number, longitude:number) {
+    console.log("Sua Localização: ");
+        console.log("Latitude: ", latitude);
+        console.log("Longitude: ", longitude);
+    
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+    Localization(position.coords.latitude,position.coords.longitude)  
+    });
+  }
 
   return (
     <div className="flex justify-between my-4 ">
