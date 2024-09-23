@@ -1,5 +1,3 @@
-export function Teste(){
-return(
-  <div>teste</div>
-)
+export function Teste() {
+  return <div>teste</div>;
 }
