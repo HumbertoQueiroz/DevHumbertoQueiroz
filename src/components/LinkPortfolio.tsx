@@ -63,7 +63,7 @@ export function LinkPortfolio() {
           title="Link para página do portifólio do Desenvolvedor Humberto Queiroz"
           rel="author"
           href="https://humbertoqueiroz.github.io/"
-          className="text-sm font-bold text-cyan-500 hover:bg-cyan-500 hover:text-white border-2 py-1 px-2 rounded border-cyan-500 "
+          className="text-sm animate-pulse font-bold text-cyan-500 hover:bg-cyan-500 hover:text-white border-2 py-1 px-2 rounded border-cyan-500 "
           target="blank"
         >
           Portfólio <span className="animate-pulse ml-1">&#128640;</span>
