@@ -60,18 +60,18 @@ export function LinkPortfolio() {
       </div>
       <div className="flex flex-col gap-1 items-center">
         <a
-          title="Link para página do portifólio do Desenvolvedor Humberto Queiroz"
+          title="Link para página do projeto no Github"
           rel="author"
-          href="https://humbertoqueiroz.github.io/"
+          href="https://github.com/HumbertoQueiroz/DevHumbertoQueiroz"
           className="text-sm animate-pulse hover:animate-none font-bold text-cyan-500 hover:bg-cyan-500 hover:text-white border-2 py-1 px-2 rounded border-cyan-500 "
           target="blank"
         >
-          Portfólio <span className="animate-pulse ml-1">&#128640;</span>
+          Github <span className="animate-pulse ml-1">&#128640;</span>
         </a>
         <img
           src="/qrcode_portifolio.png"
-          alt="QR Code para portifólio"
-          title="QR Code para portifólio"
+          alt="QR Code para página do projeto no Github"
+          title="QR Code para página do projeto no Github"
           className="rounded-lg w-32 border-2 border-cyan-500"
         />
       </div>
