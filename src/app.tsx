@@ -269,8 +269,14 @@ export function App() {
                 </h4>
                 <ul>
                   <ItemList
+                    title="Analista de Suporte"
+                    date="02/2025 - Atual"
+                    organization="Millenium Software"
+                    description="Identificação e correção de erros, suporte técnico aos usuários dos sistemas Millenium, treinamento ao usuário, documentação de manuais ao usuário e teste de software"
+                  />
+                  <ItemList
                     title="Analista de Desenvolvimento Junior"
-                    date="04/2024 - Atual"
+                    date="04/2024 - 02/2024"
                     organization="Cooperfibra"
                     description="Desenvolvimento de rotinas, relatórios e views em ADVPL e SQL SERVER."
                   />
