@@ -77,7 +77,7 @@ export function App() {
                 >
                   <ItemListCenter
                     icon={<WhatsappLogo size={16} />}
-                    text="(66) 9 9645-2787"
+                    text="(65) 9 9645-2787"
                   />
                 </a>
               </div>
