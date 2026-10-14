@@ -1,4 +1,7 @@
 import {
+  Aperture,
+  Asterisk,
+  Sparkle,
   Atom,
   BookBookmark,
   Briefcase,
@@ -6,7 +9,9 @@ import {
   DeviceMobile,
   EnvelopeSimple,
   FigmaLogo,
+  FileC,
   FileTs,
+  GitBranch,
   GithubLogo,
   Hexagon,
   Lightning,
@@ -19,6 +24,7 @@ import { ButtonImg } from "./components/ButtonImg";
 import { LinkPortfolio } from "./components/LinkPortfolio";
 import { ItemList } from "./components/ItemList";
 import { ItemListCenter } from "./components/ItemListCenter";
+import { TechGroup } from "./components/TechGroup";
 import { ProjectItem } from "./components/ProjectItem";
 import * as Accordion from "@radix-ui/react-accordion";
 import { Skill } from "./components/Skill";
@@ -110,6 +116,7 @@ export function App() {
                 <Skill levelSkill={4} textSkill="CSS" />
                 <Skill levelSkill={4} textSkill="Node.js" />
                 <Skill levelSkill={4} textSkill="PostgreSQL" />
+                <Skill levelSkill={4} textSkill="MySQL" />
                 <Skill levelSkill={4} textSkill="SQL Server" />
                 <Skill levelSkill={3} textSkill="React Native" />
                 <Skill levelSkill={3} textSkill="ADVPL" />
@@ -175,36 +182,36 @@ export function App() {
                 </p>
               </div>
               <div className="flex flex-col mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
-                <h2 className="text-xl font-bold uppercase my-1">
-                  Linguagens de Programação
-                </h2>
-                <div className="flex gap-6 my-2">
+                <h4 className="text-xl font-bold uppercase my-1">
+                  Tecnologias
+                </h4>
+                <TechGroup title="Linguagens de programação">
                   <ButtonImg
                     hasComponent={true}
-                    icon={<FileTs size={24} />}
+                    icon={<FileTs size={16} />}
                     text="TypeScript"
                     color="text-blue-400"
                   />
-                  <ButtonImg
-                    hasComponent={true}
-                    icon={<Atom size={24} />}
-                    text="React"
-                    color="text-sky-300"
-                  />
-                  <ButtonImg
-                    hasComponent={false}
-                    urlImg="sql.svg"
-                    text="MySQL"
-                    size="w-4"
-                  />
-                </div>
-                <div className="flex gap-7 my-2">
                   <ButtonImg
                     hasComponent={false}
                     urlImg="javascript.svg"
                     text="JavaScript"
                     size="w-6"
                   />
+                  <ButtonImg
+                    hasComponent={false}
+                    urlImg="advpl.png"
+                    text="ADVPL"
+                    size="w-5"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<FileC size={16} />}
+                    text="C"
+                    color="text-sky-600"
+                  />
+                </TechGroup>
+                <TechGroup title="Front-end e mobile">
                   <ButtonImg
                     hasComponent={false}
                     urlImg="html.svg"
@@ -217,37 +224,22 @@ export function App() {
                     text="CSS"
                     size="w-5"
                   />
-                </div>
-                <div className="flex gap-6 my-2">
                   <ButtonImg
-                    hasComponent={false}
-                    urlImg="advpl.png"
-                    text="ADVPL"
-                    size="w-5"
+                    hasComponent={true}
+                    icon={<Atom size={16} />}
+                    text="React"
+                    color="text-sky-300"
                   />
                   <ButtonImg
-                    hasComponent={false}
-                    urlImg="sql.svg"
-                    text="SQL Server"
-                    size="w-4"
+                    hasComponent={true}
+                    icon={<DeviceMobile size={16} weight="fill" />}
+                    text="React Native / Expo"
+                    color="text-sky-500"
                   />
-                </div>
-              </div>
-              <div className="flex flex-col mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
-                <h4 className="text-xl font-bold uppercase my-1">
-                  Framework / relacionados
-                </h4>
-                <div className="flex gap-3 my-4">
                   <ButtonImg
                     hasComponent={false}
                     urlImg="tailwind.png"
                     text="Tailwind"
-                    size="w-3"
-                  />
-                  <ButtonImg
-                    hasComponent={false}
-                    urlImg="versel.png"
-                    text="Vercel"
                     size="w-3"
                   />
                   <ButtonImg
@@ -262,14 +254,8 @@ export function App() {
                     text="UX/UI"
                     color="text-purple-600"
                   />
-                  <ButtonImg
-                    hasComponent={false}
-                    urlImg="radix.svg"
-                    text="Radix"
-                    size="w-3"
-                  />
-                </div>
-                <div className="flex flex-wrap gap-3 mb-4">
+                </TechGroup>
+                <TechGroup title="Back-end e bancos de dados">
                   <ButtonImg
                     hasComponent={true}
                     icon={<Hexagon size={16} weight="fill" />}
@@ -291,33 +277,39 @@ export function App() {
                   <ButtonImg
                     hasComponent={false}
                     urlImg="sql.svg"
+                    text="SQL"
+                    size="w-4"
+                  />
+                  <ButtonImg
+                    hasComponent={false}
+                    urlImg="sql.svg"
                     text="PostgreSQL"
                     size="w-4"
                   />
                   <ButtonImg
-                    hasComponent={true}
-                    icon={<DeviceMobile size={16} weight="fill" />}
-                    text="React Native / Expo"
-                    color="text-sky-500"
+                    hasComponent={false}
+                    urlImg="sql.svg"
+                    text="MySQL"
+                    size="w-4"
                   />
                   <ButtonImg
-                    hasComponent={true}
-                    icon={<Cube size={16} weight="fill" />}
-                    text="Docker"
-                    color="text-blue-500"
+                    hasComponent={false}
+                    urlImg="sql.svg"
+                    text="SQL Server"
+                    size="w-4"
                   />
+                </TechGroup>
+                <TechGroup title="Bibliotecas">
                   <ButtonImg
-                    hasComponent={true}
-                    icon={<FigmaLogo size={16} weight="fill" />}
-                    text="Figma"
-                    color="text-pink-500"
+                    hasComponent={false}
+                    urlImg="radix.svg"
+                    text="Radix"
+                    size="w-3"
                   />
-                </div>
-                <div className="flex gap-3">
                   <ButtonImg
                     hasComponent={false}
                     urlImg="phosphor-icon.png"
-                    text="Phosphor-icon"
+                    text="Phosphor Icons"
                     size="w-3"
                   />
                   <ButtonImg
@@ -332,6 +324,38 @@ export function App() {
                     text="Sonner"
                     size="w-3"
                   />
+                </TechGroup>
+                <TechGroup title="Ferramentas">
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<GitBranch size={16} />}
+                    text="Git"
+                    color="text-orange-600"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<GithubLogo size={16} />}
+                    text="GitHub"
+                    color="text-slate-800"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Cube size={16} weight="fill" />}
+                    text="Docker"
+                    color="text-blue-500"
+                  />
+                  <ButtonImg
+                    hasComponent={false}
+                    urlImg="versel.png"
+                    text="Vercel"
+                    size="w-3"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<FigmaLogo size={16} weight="fill" />}
+                    text="Figma"
+                    color="text-pink-500"
+                  />
                   <ButtonImg
                     hasComponent={false}
                     urlImg="markdown.png"
@@ -344,7 +368,27 @@ export function App() {
                     text="JSDoc"
                     size="w-4"
                   />
-                </div>
+                </TechGroup>
+                <TechGroup title="Inteligência artificial">
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Asterisk size={16} weight="fill" />}
+                    text="Claude"
+                    color="text-orange-500"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Sparkle size={16} weight="fill" />}
+                    text="Gemini"
+                    color="text-blue-500"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Aperture size={16} weight="fill" />}
+                    text="GPT"
+                    color="text-emerald-600"
+                  />
+                </TechGroup>
               </div>
               <div className="mx-12 my-4 p-4 border rounded-md">
                 <h4 className="uppercase text-xl font-bold my-1">Projetos</h4>
