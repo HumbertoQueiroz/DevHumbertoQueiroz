@@ -61,7 +61,7 @@ export function LinkPortfolio() {
       <div className="flex flex-col gap-1 items-center">
         <a
           title="Ir para o meu site"
-          href="https://humbertoqueiroz.github.io/"
+          href="https://devhumbertoqueiroz.com.br/"
           className="text-sm font-bold text-white bg-[#0f4571] hover:bg-[#386dbd] border-2 border-[#0f4571] hover:border-[#386dbd] py-1 px-2 rounded duration-150 print:hidden"
           target="_blank" rel="noopener noreferrer"
         >

@@ -472,7 +472,7 @@ export function App() {
                     links={[
                       {
                         label: "Site",
-                        href: "https://humbertoqueiroz.github.io/",
+                        href: "https://devhumbertoqueiroz.com.br/",
                       },
                       {
                         label: "Código",
