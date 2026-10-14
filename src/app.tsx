@@ -155,7 +155,7 @@ export function App() {
               </header>
               <div className="mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
                 <h4 className="uppercase text-xl font-bold my-1">
-                  Perfil pessoal
+                  Perfil profissional
                 </h4>
                 <p className="text-lg">
                   Desenvolvedor Full-Stack com 4 anos em TI. Crio sistemas do
@@ -169,6 +169,20 @@ export function App() {
                 </p>
                 <p className="mt-3 text-sm font-medium text-[#0f4571]">
                   &#127942; TCC App193: Troféu de Mérito Estudantil (IFMT, 2025)
+                </p>
+              </div>
+              <div className="mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
+                <h4 className="uppercase text-xl font-bold my-1">
+                  Perfil pessoal
+                </h4>
+                <p className="text-lg">
+                  Sou de Campo Verde, MT. Cheguei à tecnologia por um caminho
+                  pouco comum: comecei no Direito e hoje vivo de programar.
+                </p>
+                <p className="text-lg mt-2">
+                  Valorizo ética, organização e trabalho em equipe, e gosto de
+                  estudar: já fiz cursos na Alura, Rocketseat e Udemy. Nas horas
+                  vagas, jogo RPG.
                 </p>
               </div>
               <div className="flex flex-col mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
