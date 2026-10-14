@@ -158,15 +158,17 @@ export function App() {
                   Perfil pessoal
                 </h4>
                 <p className="text-lg">
-                  Desenvolvedor Full-Stack com 4 anos em TI, mais de 2 dedicados
-                  ao desenvolvimento de software. Atuo de ponta a ponta, do
-                  modelo de dados à interface, com React, TypeScript, Node.js e
-                  PostgreSQL, e também com mobile (React Native e Expo). Minha
-                  experiência em suporte, infraestrutura e ERP TOTVS Protheus
-                  me dá visão de sistemas em produção, e a graduação em Direito
-                  me ajuda a ler requisitos com precisão e a explicar soluções
-                  com clareza. Meu TCC, o App193, recebeu o Troféu de Mérito
-                  Estudantil do IFMT em 2025.
+                  Desenvolvedor Full-Stack com 4 anos em TI. Crio sistemas do
+                  banco de dados à interface com React, TypeScript, Node.js e
+                  PostgreSQL, e também apps mobile com React Native.
+                </p>
+                <p className="text-lg mt-2">
+                  Venho do suporte, da infraestrutura e do ERP TOTVS Protheus, e
+                  sou graduado em Direito: leio requisitos com precisão e
+                  explico soluções com clareza.
+                </p>
+                <p className="mt-3 text-sm font-medium text-[#0f4571]">
+                  &#127942; TCC App193: Troféu de Mérito Estudantil (IFMT, 2025)
                 </p>
               </div>
               <div className="flex flex-col mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
@@ -394,8 +396,12 @@ export function App() {
                     description="Portfólio responsivo em React, TypeScript, Tailwind e shadcn/ui, construído a partir de um layout do Figma."
                     links={[
                       {
-                        label: "Github",
-                        href: "https://github.com/HumbertoQueiroz",
+                        label: "Site",
+                        href: "https://humbertoqueiroz.github.io/",
+                      },
+                      {
+                        label: "Código",
+                        href: "https://github.com/HumbertoQueiroz/HumbertoQueiroz.github.io",
                       },
                     ]}
                   />
