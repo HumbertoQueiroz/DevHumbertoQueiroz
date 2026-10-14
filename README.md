@@ -27,6 +27,12 @@ Será desenvolvido um projeto com responsividade, especificado no próximo tópi
 
 Este projeto atual será parte de um projeto maior, um portfólio completo, para ser o cartão de apresentação deste programador.
 
-#### Por que o portfólio ainda não esta em produção?
+#### Situação do portfólio
 
-No momento estou desenvolvendo um projeto de App para aviso de Emergência para CBM-MT Campo Verde como projeto integrador para a Faculdade IFTM Campo Verde, projeto desenvolvido em `REACT.NATIVE` para App compatível com Android e IOS, `REACT.JS` para Web e `node.js` para backend e banco de dados `PostgreSQL`, por esse motivo não houve tempo para implementação do portifólio (ainda).
+O projeto integrador citado antes, o **App193** (aplicativo de acionamento de emergências do Corpo de Bombeiros Militar de Campo Verde), foi concluído em 2025 como TCC do curso de Análise e Desenvolvimento de Sistemas do IFMT e recebeu o **Troféu de Mérito Estudantil**. Foi desenvolvido em `React Native` e `Expo` (app), `React.js` e PWA (painel web) e `Node.js`, `Fastify`, `Prisma` e `PostgreSQL` (API):
+
+- App mobile: https://github.com/HumbertoQueiroz/APP-CBM-CAMPO-VERDE
+- API: https://github.com/HumbertoQueiroz/APPCBM-BackEnd
+- Painel web: https://github.com/HumbertoQueiroz/AppCbmWeb
+
+O portfólio completo, responsivo, está sendo desenvolvido em `React`, `TypeScript`, `Tailwind` e `shadcn/ui`, a partir de um layout do Figma.

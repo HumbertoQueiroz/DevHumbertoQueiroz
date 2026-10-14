@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+ * Impressão: o currículo é desenhado com 1044px de largura. Em A4 (margem de 8mm) cabem ~733px,
+ * então a página é reduzida a 70% e os fundos coloridos são mantidos (coluna azul).
+ */
+@page {
+  size: A4;
+  margin: 8mm;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #root {
+    zoom: 0.7;
+  }
+}

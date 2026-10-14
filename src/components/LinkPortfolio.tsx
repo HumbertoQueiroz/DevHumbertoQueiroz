@@ -48,8 +48,8 @@ export function LinkPortfolio() {
   }, []);
 
   return (
-    <div className="flex justify-between my-4 ">
-      <div className="flex flex-col gap-2">
+    <div className="flex justify-between my-4 print:justify-end">
+      <div className="flex flex-col gap-2 print:hidden">
         <div className="flex gap-4 opacity-50">
           <p title="Utilizado API Ipify para obter o ip de acesso">{`IP de acesso: ${ip}`}</p>
           <p title="Utilizado API Ipinfo para obter o cidade de ccesso">{`Cidade de acesso: ${city} - ${estado}`}</p>

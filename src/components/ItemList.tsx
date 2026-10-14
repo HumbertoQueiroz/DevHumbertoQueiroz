@@ -20,7 +20,7 @@ export function ItemList({
   description,
 }: textItemList) {
   return (
-    <div className="flex flex-col mt-2">
+    <div className="flex flex-col mt-2 print:break-inside-avoid">
       <div className="flex items-center">
         <div className="w-2 h-2 rounded-full bg-[#009ddd] mr-2" />
         <li className="text-sm">

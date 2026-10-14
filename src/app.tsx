@@ -1,9 +1,17 @@
 import {
   Atom,
   BookBookmark,
+  Briefcase,
+  Cube,
+  DeviceMobile,
   EnvelopeSimple,
+  FigmaLogo,
   FileTs,
+  GithubLogo,
+  Hexagon,
+  Lightning,
   LinkedinLogo,
+  Triangle,
   UserCircleCheck,
   WhatsappLogo,
 } from "@phosphor-icons/react";
@@ -12,6 +20,7 @@ import { ButtonImg } from "./components/ButtonImg";
 import { LinkPortfolio } from "./components/LinkPortfolio";
 import { ItemList } from "./components/ItemList";
 import { ItemListCenter } from "./components/ItemListCenter";
+import { ProjectItem } from "./components/ProjectItem";
 import * as Accordion from "@radix-ui/react-accordion";
 import { Skill } from "./components/Skill";
 
@@ -71,6 +80,26 @@ export function App() {
                   />
                 </a>
                 <a
+                  href="https://github.com/HumbertoQueiroz"
+                  target="blank"
+                  title="Clique para ir ao meu Github"
+                >
+                  <ItemListCenter
+                    icon={<GithubLogo size={16} />}
+                    text="Github"
+                  />
+                </a>
+                <a
+                  href="https://www.workana.com/freelancer/e2326db4301d70101af7d43742cafb11"
+                  target="blank"
+                  title="Clique para ir ao meu perfil no Workana"
+                >
+                  <ItemListCenter
+                    icon={<Briefcase size={16} />}
+                    text="Workana"
+                  />
+                </a>
+                <a
                   href=" https://wa.me/556596452787?text=Olá!%20Visitei%20seu%20*currículo*%20e%20gostaria%20de%20ter%20mais%20informações."
                   target="blank"
                   title="Clique para o Whatsapp"
@@ -88,10 +117,12 @@ export function App() {
                 <Skill levelSkill={6} textSkill="JavaScript" />
                 <Skill levelSkill={5} textSkill="React" />
                 <Skill levelSkill={5} textSkill="HTML" />
-                <Skill levelSkill={4} textSkill="Typescript" />
+                <Skill levelSkill={5} textSkill="Typescript" />
                 <Skill levelSkill={4} textSkill="CSS" />
-                <Skill levelSkill={4} textSkill="MySQL" />
+                <Skill levelSkill={4} textSkill="Node.js" />
+                <Skill levelSkill={4} textSkill="PostgreSQL" />
                 <Skill levelSkill={4} textSkill="SQLServer" />
+                <Skill levelSkill={3} textSkill="React Native" />
                 <Skill levelSkill={3} textSkill="ADVPL" />
               </div>
               <p className="uppercase mx-2 text-lg font-bold mt-6 mb-2">
@@ -114,7 +145,7 @@ export function App() {
                 <div className="flex my-4">
                   <div className="flex-col">
                     <h2 className="text-3xl mt-6 mb-2 uppercase text-center font-semibold text-[#4f8eed] ">
-                      Dev Front-End
+                      Dev Full-Stack
                     </h2>
                     <p className="text-xl ">
                       Transformo café em código de qualidade
@@ -122,20 +153,23 @@ export function App() {
                   </div>
                 </div>
               </header>
-              <div className="mx-12 my-4 p-4 border rounded-md">
+              <div className="mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
                 <h4 className="uppercase text-xl font-bold my-1">
                   Perfil pessoal
                 </h4>
                 <p className="text-lg">
-                  Com experiência em TI, sou um profissional aplicado e dedicado
-                  à otimização de processos e sistemas. Minha afinidade com
-                  tecnologia e minha boa comunicação me permitem entender as
-                  necessidades dos usuários e propor soluções eficazes.
-                  Atualmente, estou expandindo meus conhecimentos em programação
-                  para contribuir ainda mais com projetos inovadores.
+                  Desenvolvedor Full-Stack com 4 anos em TI, mais de 2 dedicados
+                  ao desenvolvimento de software. Atuo de ponta a ponta, do
+                  modelo de dados à interface, com React, TypeScript, Node.js e
+                  PostgreSQL, e também com mobile (React Native e Expo). Minha
+                  experiência em suporte, infraestrutura e ERP TOTVS Protheus
+                  me dá visão de sistemas em produção, e a graduação em Direito
+                  me ajuda a ler requisitos com precisão e a explicar soluções
+                  com clareza. Meu TCC, o App193, recebeu o Troféu de Mérito
+                  Estudantil do IFMT em 2025.
                 </p>
               </div>
-              <div className="flex flex-col mx-12 my-4 p-4 border rounded-md">
+              <div className="flex flex-col mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
                 <h2 className="text-xl font-bold uppercase my-1">
                   Linguagens de Programação
                 </h2>
@@ -194,7 +228,7 @@ export function App() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col mx-12 my-4 p-4 border rounded-md">
+              <div className="flex flex-col mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
                 <h4 className="text-xl font-bold uppercase my-1">
                   Framework / relacionados
                 </h4>
@@ -228,6 +262,50 @@ export function App() {
                     urlImg="radix.svg"
                     text="Radix"
                     size="w-3"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-3 mb-4">
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Hexagon size={16} weight="fill" />}
+                    text="Node.js"
+                    color="text-green-600"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Lightning size={16} weight="fill" />}
+                    text="Fastify"
+                    color="text-slate-700"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Triangle size={16} weight="fill" />}
+                    text="Prisma"
+                    color="text-indigo-600"
+                  />
+                  <ButtonImg
+                    hasComponent={false}
+                    urlImg="sql.svg"
+                    text="PostgreSQL"
+                    size="w-4"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<DeviceMobile size={16} weight="fill" />}
+                    text="React Native / Expo"
+                    color="text-sky-500"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Cube size={16} weight="fill" />}
+                    text="Docker"
+                    color="text-blue-500"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<FigmaLogo size={16} weight="fill" />}
+                    text="Figma"
+                    color="text-pink-500"
                   />
                 </div>
                 <div className="flex gap-3">
@@ -264,37 +342,103 @@ export function App() {
                 </div>
               </div>
               <div className="mx-12 my-4 p-4 border rounded-md">
+                <h4 className="uppercase text-xl font-bold my-1">Projetos</h4>
+                <ul>
+                  <ProjectItem
+                    title="App193"
+                    date="2025 - TCC no IFMT"
+                    description="Sistema de acionamento de emergências do Corpo de Bombeiros Militar de Campo Verde, em equipe de 4 pessoas. O cidadão aciona o socorro pelo celular, com a localização confirmada no mapa, e a guarnição atende e despacha as viaturas por um painel web. React Native e Expo no app, Node.js, Fastify, Prisma, PostgreSQL e Docker na API, React e PWA no painel."
+                    highlight="Troféu de Mérito Estudantil - 1ª Jornada de Ensino, Pesquisa e Extensão do IFMT Câmpus Campo Verde (2025)"
+                    links={[
+                      {
+                        label: "App mobile",
+                        href: "https://github.com/HumbertoQueiroz/APP-CBM-CAMPO-VERDE",
+                      },
+                      {
+                        label: "API",
+                        href: "https://github.com/HumbertoQueiroz/APPCBM-BackEnd",
+                      },
+                      {
+                        label: "Painel web",
+                        href: "https://github.com/HumbertoQueiroz/AppCbmWeb",
+                      },
+                      {
+                        label: "Demo do painel",
+                        href: "https://app-cbm-web.vercel.app",
+                      },
+                    ]}
+                  />
+                  <ProjectItem
+                    title="Meu Vestir"
+                    date="2026 - atual"
+                    description="Provador digital inclusivo: a cliente envia uma foto, a IA cria o avatar e ela prova looks combinando até 3 peças. Desenvolvimento fullstack, do banco de dados à interface, com acessibilidade (WCAG), integração com API de pagamento (Mercado Pago) e testes automatizados. React, Vite, TypeScript, Tailwind, Fastify, Prisma, Zod e PostgreSQL."
+                    highlight="Quartas de final da Batalha das Startups (Record News)"
+                    links={[
+                      {
+                        label: "Site",
+                        href: "https://www.meuvestir.com.br",
+                      },
+                      {
+                        label: "Demonstração",
+                        href: "https://www.meuvestir.com.br/demo",
+                      },
+                      {
+                        label: "Batalha das Startups",
+                        href: "https://batalhadasstartups.com.br/startups/neurofin/",
+                      },
+                    ]}
+                  />
+                  <ProjectItem
+                    title="Portfólio pessoal"
+                    date="2026"
+                    description="Portfólio responsivo em React, TypeScript, Tailwind e shadcn/ui, construído a partir de um layout do Figma."
+                    links={[
+                      {
+                        label: "Github",
+                        href: "https://github.com/HumbertoQueiroz",
+                      },
+                    ]}
+                  />
+                </ul>
+              </div>
+              <div className="mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
                 <h4 className="uppercase text-xl font-bold my-1">
                   Histórico profissional
                 </h4>
                 <ul>
                   <ItemList
-                    title="Analista de Suporte"
-                    date="02/2025 - Atual"
-                    organization="Millenium Software"
-                    description="Identificação e correção de erros, suporte técnico aos usuários dos sistemas Millenium, treinamento ao usuário, documentação de manuais ao usuário e teste de software"
+                    title="Desenvolvedor"
+                    date="07/2026 - Atual"
+                    organization="Meu Vestir - Provador Digital Inclusivo"
+                    description="Desenvolvimento de sistema fullstack, manutenção e implementação de melhorias, com integração a API de meio de pagamento (Mercado Pago) e a outras APIs. React, Vite, TypeScript, Tailwind, Fastify, Node, Prisma, Zod e PostgreSQL."
                   />
                   <ItemList
-                    title="Analista de Desenvolvimento Junior"
-                    date="04/2024 - 02/2024"
+                    title="Analista de Sistemas"
+                    date="02/2025 - Atual"
+                    organization="Millenium Software"
+                    description="Desenvolvimento de páginas e interfaces web, testes de software, identificação e correção de erros, suporte técnico aos usuários dos sistemas Millenium, treinamento ao usuário e documentação de manuais"
+                  />
+                  <ItemList
+                    title="Analista de Desenvolvimento"
+                    date="04/2024 - 01/2025"
                     organization="Cooperfibra"
                     description="Desenvolvimento de rotinas, relatórios e views em ADVPL e SQL SERVER."
                   />
                   <ItemList
-                    title="Analista de Suporte"
+                    title="Analista de Suporte de TI Pleno"
                     date="02/2023 - 04/2024"
                     organization="Millenium Software"
                     description="Suporte técnico aos usuários dos sistemas Millenium, treinamento ao usuário, documentação de manuais ao usuário e teste de software"
                   />
                   <ItemList
-                    title="Assistente de T.I."
-                    date="05/2022 - 01/2023"
+                    title="Auxiliar de T.I."
+                    date="05/2022 - 02/2023"
                     organization="AgroVargas"
                     description="Instalação e configuração de sistemas computacionais. Administração de ambientes computacionais, controle de níveis de acesso, banco de dados e redes."
                   />
                 </ul>
               </div>
-              <div className="mx-12 my-4 p-4 border rounded-md">
+              <div className="mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
                 <h4 className="uppercase text-xl font-bold my-1">
                   Histórico Acadêmico
                 </h4>
@@ -307,11 +451,14 @@ export function App() {
                         className="mr-1 text-[#009ddd]"
                       />
                       <li className="font-medium text-base">
-                        Técnico em Análise e Desenvolvimento de Sistemas
+                        Tecnólogo em Análise e Desenvolvimento de Sistemas
                       </li>
                     </div>
                     <p className="ml-5 text-sm font-light">
-                      IFMT - Instituto Federal de Mato Grosso - 2023 - Cursando
+                      IFMT - Instituto Federal de Mato Grosso - 2023 - 2025
+                    </p>
+                    <p className="ml-5 text-sm font-light">
+                      &#127942; Troféu de Mérito Estudantil (2025) pelo TCC App193
                     </p>
                   </div>
                   <div className="flex flex-col mt-2">
@@ -331,7 +478,7 @@ export function App() {
                   </div>
                 </ul>
               </div>
-              <div className="mx-12 my-4 p-4 border rounded-md">
+              <div className="mx-12 my-4 p-4 border rounded-md print:break-inside-avoid">
                 <h4 className="uppercase text-xl font-bold my-1">cursos</h4>
                 <ul>
                   <div className="flex flex-col mt-2">
@@ -348,7 +495,7 @@ export function App() {
                             REACT
                           </a>
                         </div>
-                        <p className="ml-1 text-xs opacity-50">
+                        <p className="ml-1 text-xs opacity-50 print:hidden">
                           Conheça mais sobre o curso clicando no link acima
                         </p>
                       </div>
@@ -367,7 +514,7 @@ export function App() {
                             PROGRAMAÇÃO WEB MODERNO
                           </a>
                         </div>
-                        <p className="ml-1 text-xs opacity-50">
+                        <p className="ml-1 text-xs opacity-50 print:hidden">
                           Conheça mais sobre o curso clicando no link acima
                         </p>
                       </div>
@@ -389,7 +536,7 @@ export function App() {
                                 </p>
                               </div>
                               <div className="flex flex-col items-start">
-                                <p className="ml-1 text-xs opacity-50">
+                                <p className="ml-1 text-xs opacity-50 print:hidden">
                                   Clique acima para ver todos os cursos ou{" "}
                                   <a
                                     href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
@@ -473,7 +620,7 @@ export function App() {
                                 </p>
                               </div>
                               <div className="flex flex-col items-start">
-                                <p className="ml-1 text-xs opacity-50">
+                                <p className="ml-1 text-xs opacity-50 print:hidden">
                                   Clique acima para ver todos os cursos ou{" "}
                                   <a
                                     href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
@@ -541,7 +688,7 @@ export function App() {
                                 </p>
                               </div>
                               <div className="flex flex-col items-start">
-                                <p className="ml-1 text-xs opacity-50">
+                                <p className="ml-1 text-xs opacity-50 print:hidden">
                                   {" "}
                                   Clique acima para ver todos os cursos ou{" "}
                                   <a
