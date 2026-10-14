@@ -1,4 +1,8 @@
 import {
+  TestTube,
+  ShieldCheck,
+  Rocket,
+  CreditCard,
   Aperture,
   Asterisk,
   Sparkle,
@@ -275,6 +279,12 @@ export function App() {
                     color="text-indigo-600"
                   />
                   <ButtonImg
+                    hasComponent={true}
+                    icon={<CreditCard size={16} weight="fill" />}
+                    text="API de pagamentos (MP)"
+                    color="text-sky-600"
+                  />
+                  <ButtonImg
                     hasComponent={false}
                     urlImg="sql.svg"
                     text="SQL"
@@ -324,6 +334,12 @@ export function App() {
                     text="Sonner"
                     size="w-3"
                   />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<ShieldCheck size={16} weight="fill" />}
+                    text="Zod"
+                    color="text-blue-700"
+                  />
                 </TechGroup>
                 <TechGroup title="Ferramentas">
                   <ButtonImg
@@ -343,6 +359,18 @@ export function App() {
                     icon={<Cube size={16} weight="fill" />}
                     text="Docker"
                     color="text-blue-500"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<Rocket size={16} weight="fill" />}
+                    text="Vite"
+                    color="text-violet-500"
+                  />
+                  <ButtonImg
+                    hasComponent={true}
+                    icon={<TestTube size={16} weight="fill" />}
+                    text="Jest"
+                    color="text-red-600"
                   />
                   <ButtonImg
                     hasComponent={false}
