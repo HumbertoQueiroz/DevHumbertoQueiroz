@@ -13,7 +13,6 @@ import {
   LinkedinLogo,
   Triangle,
   UserCircleCheck,
-  WhatsappLogo,
 } from "@phosphor-icons/react";
 import { Avatar } from "./components/Avatar";
 import { ButtonImg } from "./components/ButtonImg";
@@ -71,42 +70,32 @@ export function App() {
                 />
                 <a
                   href="https://www.linkedin.com/in/humberto-queiroz-37385a1b6/"
-                  target="blank"
-                  title="Clique para ir ao meu Linkedin"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Clique para ir ao meu LinkedIn"
                 >
                   <ItemListCenter
                     icon={<LinkedinLogo size={16} />}
-                    text="Linkedin"
+                    text="LinkedIn"
                   />
                 </a>
                 <a
                   href="https://github.com/HumbertoQueiroz"
-                  target="blank"
-                  title="Clique para ir ao meu Github"
+                  target="_blank" rel="noopener noreferrer"
+                  title="Clique para ir ao meu GitHub"
                 >
                   <ItemListCenter
                     icon={<GithubLogo size={16} />}
-                    text="Github"
+                    text="GitHub"
                   />
                 </a>
                 <a
                   href="https://www.workana.com/freelancer/e2326db4301d70101af7d43742cafb11"
-                  target="blank"
+                  target="_blank" rel="noopener noreferrer"
                   title="Clique para ir ao meu perfil no Workana"
                 >
                   <ItemListCenter
                     icon={<Briefcase size={16} />}
                     text="Workana"
-                  />
-                </a>
-                <a
-                  href=" https://wa.me/556596452787?text=Olá!%20Visitei%20seu%20*currículo*%20e%20gostaria%20de%20ter%20mais%20informações."
-                  target="blank"
-                  title="Clique para o Whatsapp"
-                >
-                  <ItemListCenter
-                    icon={<WhatsappLogo size={16} />}
-                    text="(65) 9 9645-2787"
                   />
                 </a>
               </div>
@@ -117,11 +106,11 @@ export function App() {
                 <Skill levelSkill={6} textSkill="JavaScript" />
                 <Skill levelSkill={5} textSkill="React" />
                 <Skill levelSkill={5} textSkill="HTML" />
-                <Skill levelSkill={5} textSkill="Typescript" />
+                <Skill levelSkill={5} textSkill="TypeScript" />
                 <Skill levelSkill={4} textSkill="CSS" />
                 <Skill levelSkill={4} textSkill="Node.js" />
                 <Skill levelSkill={4} textSkill="PostgreSQL" />
-                <Skill levelSkill={4} textSkill="SQLServer" />
+                <Skill levelSkill={4} textSkill="SQL Server" />
                 <Skill levelSkill={3} textSkill="React Native" />
                 <Skill levelSkill={3} textSkill="ADVPL" />
               </div>
@@ -193,7 +182,7 @@ export function App() {
                   <ButtonImg
                     hasComponent={true}
                     icon={<FileTs size={24} />}
-                    text="Typescript"
+                    text="TypeScript"
                     color="text-blue-400"
                   />
                   <ButtonImg
@@ -239,7 +228,7 @@ export function App() {
                   <ButtonImg
                     hasComponent={false}
                     urlImg="sql.svg"
-                    text="SQLServer"
+                    text="SQL Server"
                     size="w-4"
                   />
                 </div>
@@ -258,7 +247,7 @@ export function App() {
                   <ButtonImg
                     hasComponent={false}
                     urlImg="versel.png"
-                    text="Versel"
+                    text="Vercel"
                     size="w-3"
                   />
                   <ButtonImg
@@ -433,7 +422,7 @@ export function App() {
                     description="Desenvolvimento de sistema fullstack, manutenção e implementação de melhorias, com integração a API de meio de pagamento (Mercado Pago) e a outras APIs. React, Vite, TypeScript, Tailwind, Fastify, Node, Prisma, Zod e PostgreSQL."
                   />
                   <ItemList
-                    title="Analista de Sistemas"
+                    title="Analista de Desenvolvimento"
                     date="02/2025 - Atual"
                     organization="Millenium Software"
                     description="Desenvolvimento de páginas e interfaces web, testes de software, identificação e correção de erros, suporte técnico aos usuários dos sistemas Millenium, treinamento ao usuário e documentação de manuais"
@@ -508,7 +497,7 @@ export function App() {
                           <span className="w-1 h-5 mr-1 group-hover:w-2 duration-150  bg-[#05d3f8]" />
                           <a
                             href="https://www.rocketseat.com.br/formacao/react"
-                            target="blank"
+                            target="_blank" rel="noopener noreferrer"
                             className="font-semibold uppercase text-[#085EC5]"
                             title="Clique para ir para página de validação dos certificados"
                           >
@@ -526,8 +515,8 @@ export function App() {
                         <div className="flex items-center group">
                           <span className="w-1 h-5 mr-1 bg-[#A435F0] group-hover:w-2 duration-150" />
                           <a
-                            href="https://www.udemy.com/course/fundamentos-da-web-que-todo-dev-precisa-saber/?couponCode=ST11MT91624A"
-                            target="blank"
+                            href="https://www.udemy.com/course/fundamentos-da-web-que-todo-dev-precisa-saber/"
+                            target="_blank" rel="noopener noreferrer"
                             className=" font-bold text-[#085EC5] "
                             title="Clique para ir para página de validação dos certificados"
                           >
@@ -560,7 +549,7 @@ export function App() {
                                   Clique acima para ver todos os cursos ou{" "}
                                   <a
                                     href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
-                                    target="blank"
+                                    target="_blank" rel="noopener noreferrer"
                                     title="Clique para ir para página de validação dos certificados"
                                     className="text-blue-500 underline"
                                   >
@@ -644,7 +633,7 @@ export function App() {
                                   Clique acima para ver todos os cursos ou{" "}
                                   <a
                                     href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
-                                    target="blank"
+                                    target="_blank" rel="noopener noreferrer"
                                     title="Clique para ir para página de validação dos certificados"
                                     className="text-blue-500 underline"
                                   >
@@ -713,7 +702,7 @@ export function App() {
                                   Clique acima para ver todos os cursos ou{" "}
                                   <a
                                     href="https://cursos.alura.com.br/user/humbertojuridico2016/fullCertificate/e45b2fca854cd6585245e0981962422f"
-                                    target="blank"
+                                    target="_blank" rel="noopener noreferrer"
                                     title="Clique para ir para página de validação dos certificados"
                                     className="text-blue-500 underline"
                                   >

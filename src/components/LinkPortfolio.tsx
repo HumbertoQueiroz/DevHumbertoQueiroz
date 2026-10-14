@@ -52,7 +52,7 @@ export function LinkPortfolio() {
       <div className="flex flex-col gap-2 print:hidden">
         <div className="flex gap-4 opacity-50">
           <p title="Utilizado API Ipify para obter o ip de acesso">{`IP de acesso: ${ip}`}</p>
-          <p title="Utilizado API Ipinfo para obter o cidade de ccesso">{`Cidade de acesso: ${city} - ${estado}`}</p>
+          <p title="Utilizado API Ipinfo para obter a cidade de acesso">{`Cidade de acesso: ${city} - ${estado}`}</p>
         </div>
         <p title="Manipulação de datas com Javascript">
           {`Bem-vindo ao meu currículo, hoje é ${dateToday}.`}
@@ -63,23 +63,22 @@ export function LinkPortfolio() {
           title="Ir para o meu site"
           href="https://humbertoqueiroz.github.io/"
           className="text-sm font-bold text-white bg-[#0f4571] hover:bg-[#386dbd] border-2 border-[#0f4571] hover:border-[#386dbd] py-1 px-2 rounded duration-150 print:hidden"
-          target="blank"
+          target="_blank" rel="noopener noreferrer"
         >
           Meu site <span className="ml-1">&#127760;</span>
         </a>
         <a
-          title="Link para página do projeto no Github"
-          rel="author"
+          title="Link para página do projeto no GitHub"
           href="https://github.com/HumbertoQueiroz/DevHumbertoQueiroz"
           className="text-sm animate-pulse hover:animate-none font-bold text-cyan-500 hover:bg-cyan-500 hover:text-white border-2 py-1 px-2 rounded border-cyan-500 "
-          target="blank"
+          target="_blank" rel="author noopener noreferrer"
         >
-          Github <span className="animate-pulse ml-1">&#128640;</span>
+          GitHub <span className="animate-pulse ml-1">&#128640;</span>
         </a>
         <img
           src="/qrcode_portifolio.png"
-          alt="QR Code para página do projeto no Github"
-          title="QR Code para página do projeto no Github"
+          alt="QR Code para página do projeto no GitHub"
+          title="QR Code para página do projeto no GitHub"
           className="rounded-lg w-32 border-2 border-cyan-500"
         />
       </div>

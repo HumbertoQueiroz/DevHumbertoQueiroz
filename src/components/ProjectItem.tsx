@@ -47,7 +47,7 @@ export function ProjectItem({
             <a
               key={link.href}
               href={link.href}
-              target="blank"
+              target="_blank" rel="noopener noreferrer"
               title={`Clique para abrir: ${link.label}`}
               className="text-blue-500 underline hover:text-[#0f4571]"
             >
